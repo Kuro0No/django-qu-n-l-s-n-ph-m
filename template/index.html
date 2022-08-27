@@ -9,7 +9,11 @@
 <body>
     {% include 'navbar.html' %}
     <h1>
-        ádasdas
+        {% for product in products %}
+        <div>{{product.id}}</div>
+
+
+        {% endfor%}
     </h1>
 </body>
 </html>
