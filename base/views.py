@@ -11,4 +11,12 @@ products = [
 
 def home(request):
     context = {'products': products}
-    return render(request, 'index.html', context)
+    return render(request, 'page/dashboard.html', context)
+
+def products(request):
+    return render(request, 'page/products.html', )
+
+
+
+def categorys(request):
+    return render(request, 'page/categorys.html', )

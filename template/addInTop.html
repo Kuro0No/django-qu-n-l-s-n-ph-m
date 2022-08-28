@@ -1,0 +1,11 @@
+<form method="post">
+    {% csrf_token %}
+    <button onclick="click('{{event}}')" class="btn btn-primary" type="submit">Add</button>
+</form>
+
+<script type="text/javascript">
+    const click = (e) => {
+        alert(e)
+    }
+
+</script>
